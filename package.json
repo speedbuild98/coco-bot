@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch src --exec ts-node src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsup src/index.ts --minify"
+   "build": "tsc -p tsconfig.json"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +19,8 @@
     "tsup": "^7.2.0",
     "tsx": "^4.1.1",
     "typescript": "^5.2.2"
-  }
+  },
+  "engines": {
+  "node": "16.x"
+}
 }
