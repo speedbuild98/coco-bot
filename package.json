@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
-    "build": "tsup src/index.ts --minify"
+  "dev": "nodemon --watch src --exec ts-node src/index.ts",
+  "start": "node dist/index.js",
+  "build": "tsc -p tsconfig.json",
   },
   "author": "",
   "license": "ISC",
