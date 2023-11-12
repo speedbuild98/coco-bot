@@ -4,7 +4,7 @@
 
 <img width='100px' src="https://github.com/speedbuild98/coco-bot/blob/main/assets/COCOBOT%20LOGO.png"/>
 
-[English](#english) | [Español](#español) | [Example](#example)
+[❤️English](#english) | [💙Español](#español) | [👽Example](#example)
 
 </div>
 
