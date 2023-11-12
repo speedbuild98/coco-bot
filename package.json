@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "nodemon --watch src --exec ts-node src/index.ts",
-  "start": "node dist/index.js",
-  "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json"
   },
   "author": "",
   "license": "ISC",
