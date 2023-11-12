@@ -6,8 +6,6 @@
 
 [English](#english) | [Español](#español) | [Permissions](#permissions)
 
-![Usage](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20EXAMPLE.png?raw=true)
-
 </div>
 
 ## English
@@ -75,6 +73,6 @@ Cocobot es un bot para Discord diseñado para la diversión e interacción. Los 
 
 ![Project Structure](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20CODE%20STRUCTURE.png?raw=true)
 
-
+![Usage](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20EXAMPLE.png?raw=true)
 
 ![Permissions](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20PERMISSIONS.png?raw=true)
