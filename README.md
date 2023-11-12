@@ -1,6 +1,14 @@
 # Cocobot!
 
-[English](#english) | [Español](#español)
+<div align="center">
+
+<img width='100px' src="https://github.com/speedbuild98/coco-bot/blob/main/assets/COCOBOT%20LOGO.png"/>
+
+[English](#english) | [Español](#español) | [Permissions](#permissions)
+
+![Usage](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20EXAMPLE.png?raw=true)
+
+</div>
 
 ## English
 
@@ -60,4 +68,13 @@ Cocobot es un bot para Discord diseñado para la diversión e interacción. Los 
 
 - Cocobot anunciará cuando termine una cococadena y si se establece un nuevo récord.
 - El récord se persiste en record.txt para compararlo en futuras cadenas.
-# coco-bot
+
+## Permissions
+
+![Authorization screen](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20AUTHORIZE%20SCREEN.png?raw=true)
+
+![Project Structure](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20CODE%20STRUCTURE.png?raw=true)
+
+
+
+![Permissions](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20PERMISSIONS.png?raw=true)
