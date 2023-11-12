@@ -22,6 +22,9 @@ const cocoChain: CocoChain = {
   channelId: null,
 };
 
+// Estructura para almacenar los usuarios que han enviado el emoji coco.
+const usersWhoPostedCoco: Set<string> = new Set();
+
 // Obtener el récord desde un archivo. Si no hay archivo o hay un error, el récord es 0.
 function getRecord(): number {
   try {
@@ -58,6 +61,7 @@ export async function execute(interaction: CommandInteraction) {
   cocoChain.isActive = true;
   cocoChain.count = 0;
   cocoChain.channelId = interaction.channelId;
+  usersWhoPostedCoco.clear();
   interaction.reply("¡Comenzó el cocotime! ¡Hagamos un nuevo record!");
 
   // Remover el listener anterior si existe para evitar duplicados.
@@ -67,10 +71,13 @@ export async function execute(interaction: CommandInteraction) {
 
   // Definir el listener para mensajes nuevos.
   messageListener = async (message) => {
-    // Ignorar mensajes del bot.
-    if (message.author.bot) return;
-    // Ignorar mensajes si la cococadena no está activa o no es el mismo canal.
-    if (!cocoChain.isActive || message.channelId !== cocoChain.channelId)
+    // Ignorar mensajes si la cococadena no está activa o no es el mismo canal o si el autor es un bot o si el autor ya ha enviado el emoji coco.
+    if (
+      !cocoChain.isActive ||
+      message.channelId !== cocoChain.channelId ||
+      message.author.bot ||
+      usersWhoPostedCoco.has(message.author.id)
+    )
       return;
 
     // Manejar mensajes que no son el emoji coco.
@@ -90,6 +97,7 @@ export async function execute(interaction: CommandInteraction) {
       cocoChain.isActive = false;
       cocoChain.count = 0;
       cocoChain.channelId = null;
+      usersWhoPostedCoco.clear();
     } else {
       // Incrementar el contador si el mensaje es el emoji coco.
       cocoChain.count++;
