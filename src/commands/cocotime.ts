@@ -79,22 +79,23 @@ export async function execute(interaction: CommandInteraction) {
       if (cocoChain.count > cocoChain.record) {
         setRecord(cocoChain.count);
         interaction.channel?.send(
-          `🎉🎉🎉¡Es un nuevo record! ¡El total es ${cocoChain.count}!🎉🎉🎉`
+            `🎉 ¡Es un nuevo record! ¡El total fue ${cocoChain.count} 🥥!`
         );
       } else {
         interaction.channel?.send(
-          `¡Se acabó el cocotime! ¡El total fue ${cocoChain.count}! El record actual es de ${cocoChain.record} cocos.`
+          `¡Se acabó el cocotime! ¡El total fue ${cocoChain.count}! El record actual sigue siendo ${cocoChain.record} 🥥.`
         );
       }
       // Reiniciar la cococadena.
       cocoChain.isActive = false;
       cocoChain.count = 0;
+      cocoChain.channelId = null;
     } else {
       // Incrementar el contador si el mensaje es el emoji coco.
       cocoChain.count++;
       // Anunciar cada 10 cocos.
       if (cocoChain.count % 10 === 0) {
-        interaction.channel?.send(`¡Llevamos ${cocoChain.count} cocos!`);
+        interaction.channel?.send(`¡Llevamos ${cocoChain.count} 🥥!`);
       }
     }
   };
