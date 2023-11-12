@@ -83,7 +83,7 @@ export async function execute(interaction: CommandInteraction) {
         );
       } else {
         interaction.channel?.send(
-          `¡Se acabó el cocotime! ¡El total fue ${cocoChain.count}! y el record es de ${cocoChain.record} cocos.`
+          `¡Se acabó el cocotime! ¡El total fue ${cocoChain.count}! El record actual es de ${cocoChain.record} cocos.`
         );
       }
       // Reiniciar la cococadena.
