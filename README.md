@@ -5,42 +5,13 @@
 
 <img width='300px' src="https://github.com/speedbuild98/coco-bot/blob/main/assets/COCOBOT%20LOGO.png"/>
 
-[❤️English](#english) | [💙Español](#español) | [👽Permissions](#permissions) | [💪Add to my server](https://discord.com/api/oauth2/authorize?client_id=1173086093017612330&permissions=274877978624&scope=bot) | [⭐Live Test](https://discord.gg/ZdkffEcz)
+ [💙Español](#español) | [❤️English](#english) | [👽Permissions](#permissions) | [💪Add to my server](https://discord.com/api/oauth2/authorize?client_id=1173086093017612330&permissions=274877978624&scope=bot) | [⭐Live Test](https://discord.gg/ZdkffEcz)
      
 ![Tech](https://skillicons.dev/icons?i=ts,nodejs,discord)
 
 <img width="300px" src="https://github.com/speedbuild98/coco-bot/blob/main/assets/COCO%20LIVE.gif?raw=true"/>
 
 </div>
-
-## English
-
-### Introduction
-
-Cocobot is a Discord bot designed for fun and engagement. Users can invoke two primary commands: `/coco` which drops a coconut emoji (🥥) in the chat, and `/cocotime` which starts a coconut chain (a series of uninterrupted coconut emojis). During a cocochain, Cocobot counts the emojis until someone breaks the chain by sending a different message.
-
-### Requirements
-
-- Node.js
-- Discord.js library
-- A Discord Bot Token
-
-### Setup
-
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Create a `.env` file with your Discord Bot Token as `DISCORD_BOT_TOKEN=your_token_here` and your Discord APP ID as `DISCORD_APPLICATION_ID=your_id_here`.
-4. Start the bot with `npm run start`.
-
-### Usage
-
-- `/coco`: Sends a coconut emoji to the current chat.
-- `/cocotime`: Initiates a cocochain event where Cocobot counts coconut emojis until the chain is broken.
-
-### Additional Information
-
-- Cocobot will announce when a cocochain ends and if a new record is set.
-- The record is persisted on record.txt to be compared against in future chains.
 
 ## Español
 
@@ -72,6 +43,35 @@ Cocobot es un bot para Discord diseñado para la diversión e interacción. Los 
 - Cocobot anunciará cuando termine una cococadena y si se establece un nuevo récord.
 - El récord se persiste en record.txt para compararlo en futuras cadenas.
 
+## English
+
+### Introduction
+
+Cocobot is a Discord bot designed for fun and engagement. Users can invoke two primary commands: `/coco` which drops a coconut emoji (🥥) in the chat, and `/cocotime` which starts a coconut chain (a series of uninterrupted coconut emojis). During a cocochain, Cocobot counts the emojis until someone breaks the chain by sending a different message.
+
+### Requirements
+
+- Node.js
+- Discord.js library
+- A Discord Bot Token
+
+### Setup
+
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Create a `.env` file with your Discord Bot Token as `DISCORD_BOT_TOKEN=your_token_here` and your Discord APP ID as `DISCORD_APPLICATION_ID=your_id_here`.
+4. Start the bot with `npm run start`.
+
+### Usage
+
+- `/coco`: Sends a coconut emoji to the current chat.
+- `/cocotime`: Initiates a cocochain event where Cocobot counts coconut emojis until the chain is broken.
+
+### Additional Information
+
+- Cocobot will announce when a cocochain ends and if a new record is set.
+- The record is persisted on record.txt to be compared against in future chains.
+  
 ## Permissions
 
 ![Authorization screen](https://github.com/speedbuild98/coco-bot/blob/main/assets/BOT%20AUTHORIZE%20SCREEN.png?raw=true)
