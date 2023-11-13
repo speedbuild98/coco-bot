@@ -1,4 +1,4 @@
-![](https://api.visitorbadge.io/api/VisitorHit?user=speedbuild98&repo=coco-bot&countColor=%236D37D5)
+![](https://api.visitorbadge.io/api/VisitorHit?user=speedbuild98&repo=coco-bot&countColor=%23abe53a)
 # Cocobot!
 
 <div align="center">
